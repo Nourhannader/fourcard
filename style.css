@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    background-color:  hsl(0, 0%, 98%);
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 0;
+    row-gap: 10px;
+}
+.header .one{
+    font-weight: 200;
+    color: hsl(180, 2%, 21%);
+}
+.header p{
+    color: rgb(145, 145, 142);
+}
+.header span{
+    margin-left: 40px;
+    display: block;
+}
+.layer{
+    position: relative;
+}
+.card{
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border-radius: 4px;
+    padding: 15px ;
+    width: 20%;
+    height: 25vh;
+    position: relative;
+}
+.card-1{
+    border-top: 3px solid hsl(180, 62%, 55%);
+    left: 170px;
+    top: 130px;
+}
+.card-2{
+    border-top: 3px solid hsl(0, 78%, 62%);
+    left: 500px;
+    top: -165px;
+}
+.card-3{
+    border-top: 3px solid hsl(34, 97%, 64%);
+    left: 500px;
+    top: -130px;
+}
+.card-4{
+    border-top: 3px solid rgb(8, 91, 216);
+    left: 830px;
+    top: -450px;
+
+}
+.card p{
+    color: rgb(145, 145, 142); 
+}
+.card h3{
+    font-weight: 400;
+}
+.card img{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+@media only screen and (min-width: 375px) and (max-width: 1000px) {
+    .layer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: static;
+    }
+    .card{
+        position: static;
+        width: 50%;
+        margin: 15px auto;
+        height: 30vh;
+    }
+    .card img{
+        position: static;
+        margin-left: 170px;
+        margin-top: 30px;
+    }
+    .header span{
+        margin-left: 0;
+        display: initial;
+    }
+    .header p{
+        text-align: center;
+    }
+}
